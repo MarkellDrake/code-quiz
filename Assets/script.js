@@ -1,7 +1,6 @@
 var startEl = document.querySelector("#startQuiz");
 var firstEl = document.querySelector("#firstQuestion");
-
-
+var score = 0;
 
 
 var questions = [{
@@ -12,5 +11,34 @@ correctAnswer:"HTML"
 
 ]
 
+function displayQuestion(questionIndex) {
+   var currentQuestion = questions[questionIndex];
+   var questionContainer = document.querySelector("#questionContainer");
+
+   questionElement.textContent = currentQuestion.question;
+
+   currentQuestion.answers.forEach(answer =>{
+      answerItem.textContent=answer;
+      answerList.appendchild(answerItem);
+   });  
+}
+answerList.addEventListener("click", function(event) {
+   var selectedAnswer = event.target.textContent;
+   var correctAnswer = currentQuestion.correctAnswer;
+   
+   if (selectedAnswer === correctAnswer) {
+      displayQuestion(questionIndex + 1);
+      score++
+   } else {
+    //section to subtract time from timer 
+    displayQuestion(questionIndex + 1);
+   }
+
+   if (questionIndex === questions.length -1 ) {
+      
+   }
+   
+ });
+ 
 
 startEl.addEventListener("click", firstQuestion);
