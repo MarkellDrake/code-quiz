@@ -35,7 +35,7 @@ answerList.addEventListener("click", function(event) {
    }
 
    if (questionIndex === questions.length -1 ) {
-      
+      //this is where the quiz should end 
    }
    
  });
