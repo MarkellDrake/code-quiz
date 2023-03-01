@@ -1,33 +1,38 @@
-!<DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Code Quiz</title>
-  <link rel="stylesheet" href="./Assets/style.css">
+<!DOCTYPE html>
+    <html lang="en">
 
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Code Quiz</title>
+        <link rel="stylesheet" href="./Assets/style.css">
 
-<body>
-    <div>
-        <h1> Coding Quiz </h1>
-        <h2> This is a coding quiz for every question you get incorrect the time remaining will decrease<br>
-            the total points will be at the end  </h2>
-        <button id="startQuiz"> Start Quiz </button>
-    <div>
-        <h2 id ="questionElement"></h2>
-        <ul id = "answerList">
-            <li id = "answerItem">
+    </head>
 
-            </li>
-        </ul>
+    <body>
+        <nav id ="timer" >
+
+        </nav>
+        <div id="introSection">
+            <h1> Coding Quiz </h1>
+            <h2> This is a coding quiz for every question you get incorrect the time remaining will decrease<br>
+                the total points will be at the end </h2>
+            <button id="startQuiz"> Start Quiz </button>
+        </div>
+        <div id="questionSection">
+            <h2 id="displayQuestion"></h2>
+            <ul id="answerList">
+                
+            </ul>
 
 
-    </div>
-   
+        </div>
+        <div class ="highScore" ></div>
+        
 
-    </div>
-    <script src="Assets/script.js"></script>
-</body>
-</html>
+
+        <script src="Assets/script.js"></script>
+    </body>
+
+    </html>
